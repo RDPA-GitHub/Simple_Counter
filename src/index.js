@@ -10,10 +10,13 @@ import './App.css';
 
 // Importando Componente App para Renderizar
 import App from './App';
-
+const Root = ReactDOM.createRoot(document.getElementById('root'));
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
+setInterval(
+  () => {
+    Root.render(<App />)
+  },
+  100
+);
 
-
-const Root = ReactDOM.createRoot(document.getElementById('root'));
-Root.render(<App />);

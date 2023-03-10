@@ -24,10 +24,18 @@ body {
   height: 500px;
 }
 
-h1 {
+.counter {
   margin-top: -80px;
-  text-align: center;
+  text-align  : center;
+  background-color: black;
+}
+.counter div {
+  display: inline-block;
+  line-height: 60px;
+  background: #101010;
   font-family: 'Codystar', cursive;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 255, 98);
   font-size: 80px;
+  padding: 10px;
+  margin: 10px;
 }

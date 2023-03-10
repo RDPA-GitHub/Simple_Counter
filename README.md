@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# PROYECTO SIMPLE COUNTER DE 4GEEKS ACADEMY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crea un componente de contador de segundos, llamado SecondsCounter.
 
-## Available Scripts
+1. El propósito principal del componente es mostrar cuántos segundos han pasado desde que el sitio web terminó de cargarse (onLoad).
+2. Use el ReactDOM.render() para representar el componente en la aplicación web.
+3. Use la función setInterval() para volver a renderizar el componente cada segundo.
+4. El componente no necesita un estado local, puede pasar la cantidad de segundos como props de la siguiente manera:
 
-In the project directory, you can run:
+```React
+SecondsCounter seconds={3434}
+```
+5. Puedes encontrar el icono del reloj a la izquierda del componente en Font Awesome.
+   
+## 🔥 <strong>Bono</strong>
 
-### `npm start`
+1. Crear una opción de cuenta regresiva a partir de un número dado.
+2. Crear funciones de parada, reinicio y reanudación
+3. Crear una alerta cuando el usuario llega a un tiempo específico, es decir, el usuario ingresa "10", una alerta debería mostrarse notificando al usuario que se alcanzó su tiempo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<hr />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### <span style="font-weight:bold;"> Desarrollador Ronald Peña </span>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  <img src = "./src/img/Logo.png" width = "250px" />

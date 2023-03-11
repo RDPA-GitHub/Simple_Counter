@@ -12,11 +12,15 @@ import './App.css';
 import App from './App';
 const Root = ReactDOM.createRoot(document.getElementById('root'));
 /*-------------------------------------------------------------------------------------------------------------------------*/
-
+let Contador = 0;
 setInterval(
   () => {
-    Root.render(<App />)
+    Root.render(<App 
+      Data = {Contador}
+    />)
+    Contador++;
+    //console.log(reloj);
   },
-  100
+  1000
 );
 

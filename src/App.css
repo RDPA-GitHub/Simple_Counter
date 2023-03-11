@@ -3,7 +3,7 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 13% 0 11%;
   /*box-sizing: border-box;*/
 }
 
@@ -18,6 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: -80px;
+  margin-right: 10px;
 }
 
 .Logo {
@@ -28,7 +29,11 @@ body {
   margin-top: -80px;
   text-align  : center;
   background-color: black;
+  font-size: 80px;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
+
 .counter div {
   display: inline-block;
   line-height: 60px;
@@ -38,4 +43,15 @@ body {
   font-size: 80px;
   padding: 10px;
   margin: 10px;
+  border-radius: 3px;
+}
+
+.Display {
+  width: 80px;
+}
+
+.clock {
+  color: rgb(0, 255, 98);
+  width: 100px;
+  margin-left: 0;
 }

@@ -2,11 +2,38 @@ import React from "react";
 import { FaClock } from 'react-icons/fa'
 
 let Conteo = 0;
+let Su = 0, Mu = 0, Md = 0, Hu= 0, Hd = 0;
 
 const SecondsCounter = () => {
   console.log(Conteo);
   Conteo++;
 
+          if (Conteo % 10 === 0) Su++;
+          if (Su === 6){
+            Su = 0;
+            Md++;
+          }
+          if(Md === 10){
+            Mu++;
+            Md = 0;
+          }
+          if(Mu === 6){
+            Mu = 0;
+            Hd++;
+          }
+          if(Hd === 10){
+            Hu++;
+            Hd = 0;
+          }
+          if(Hu === 6) {
+            Hu = 0;
+            Hd = 0;
+            Mu = 0;
+            Md = 0;
+            Su = 0;
+            Conteo = 0;
+          }
+  
   return (
     <div className="counter">
       <div >
@@ -15,23 +42,23 @@ const SecondsCounter = () => {
 
       {/* -------------------  Horas  ----------------------------*/}
       <div className="Display">
-        {Math.floor(Conteo / 100000) % 10}
+        {Hu}
       </div>
       <div className="Display">
-        {Math.floor(Conteo / 10000) % 10}
+        {Hd}
       </div>
 
       {/*---------------------  Minutos  -------------------------*/}
       <div className="Display">
-        {Math.floor(Conteo / 1000) % 10}
+        {Mu}
       </div>
       <div className="Display">
-        {Math.floor(Conteo / 100) % 10}
+        {Md}
       </div>
 
       {/*---------------------  Segundos  -------------------------*/}
       <div className="Display">
-        {Math.floor(Conteo / 10) % 10}
+        {Su}
       </div>
       <div className="Display">
         {Math.floor(Conteo / 1) % 10}

@@ -21,6 +21,6 @@ setInterval(
     Contador++;
     //console.log(reloj);
   },
-  1000
+  100
 );
 
